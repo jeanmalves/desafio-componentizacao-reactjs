@@ -5,12 +5,12 @@ interface GenreProps {
   title: string;
 }
 
-interface MoviesByGenre {
+interface MoviesByGenreProps {
   movies: MovieProps[];
   selectedGenre: GenreProps;
 }
 
-export function Content(props: MoviesByGenre) {
+export function Content(props: MoviesByGenreProps) {
   return (
     <div className="container">
       <header>

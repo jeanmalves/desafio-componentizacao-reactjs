@@ -1,4 +1,5 @@
 import { MovieProps } from "../App";
+import { Header } from "./Header";
 import { MovieCard } from "./MovieCard";
 
 interface GenreProps {
@@ -13,9 +14,7 @@ interface MoviesByGenreProps {
 export function Content(props: MoviesByGenreProps) {
   return (
     <div className="container">
-      <header>
-        <span className="category">Categoria:<span> {props.selectedGenre.title}</span></span>
-      </header>
+      <Header title={props.selectedGenre.title} />
 
       <main>
         <div className="movies-list">
